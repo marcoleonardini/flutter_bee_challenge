@@ -2,14 +2,24 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_bee_challenge/src/ui/pages/home.page.dart';
+import 'package:flutter_bee_challenge/src/ui/consts/app_color.const.dart';
+import 'package:flutter_bee_challenge/src/ui/pages/welcome.page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Timer(
+      Duration(milliseconds: 2500),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Welcome(),
+        ),
+      ),
+    );
     return Container(
       constraints: BoxConstraints.expand(),
-      color: Color(0xff503d2e),
+      color: AppColors.primaryColor,
       child: Align(
         alignment: Alignment.center,
         child: SizedBox(
