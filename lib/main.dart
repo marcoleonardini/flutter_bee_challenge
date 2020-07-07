@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bee_challenge/src/ui/pages/splash.page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,14 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: SplashPage(),
     );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
