@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bee_challenge/src/ui/consts/app_color.const.dart';
+import 'package:flutter_bee_challenge/src/ui/consts/text_styles.const.dart';
 import 'package:flutter_bee_challenge/src/ui/painters/login.painter.dart';
 
-class Welcome extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -75,14 +76,8 @@ class Welcome extends StatelessWidget {
                             ),
                             Align(
                               alignment: Alignment.center,
-                              child: Text(
-                                'Iniciar sesión',
-                                style: TextStyle(
-                                  color: AppColors.primaryColor,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                              child: Text('Iniciar sesión',
+                                  style: TextStylesCons.titleStyle),
                             ),
                             Column(
                               children: <Widget>[

@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bee_challenge/src/ui/consts/app_color.const.dart';
-import 'package:flutter_bee_challenge/src/ui/pages/welcome.page.dart';
+import 'package:flutter_bee_challenge/src/ui/pages/login.page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => Welcome(),
+          builder: (context) => LoginPage(),
         ),
       ),
     );
