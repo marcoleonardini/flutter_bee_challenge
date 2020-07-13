@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bee_challenge/src/ui/pages/code.page.dart';
 import 'package:flutter_bee_challenge/src/ui/pages/number_request.page.dart';
 import 'package:flutter_bee_challenge/src/ui/pages/splash.page.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NumberRequestPage(),
+      home: CodePage(),
     );
   }
 }
